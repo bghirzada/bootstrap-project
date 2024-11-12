@@ -1,0 +1,530 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    padding: 26px 0;
+    background-color: rgb(45 61 80);
+    color: white; 
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+
+    .navBar{
+        padding: 0 70px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        a{
+            color: white;
+            text-decoration: none;
+        }
+
+        .navBarList{
+            list-style: none;
+            display: flex;
+            font-weight: 700;
+
+            li{
+                padding: 16px;   
+            }
+
+            li :hover{
+                color: rgb(28 187 154);
+                transition-duration: 0.4s;
+            }
+        }
+
+        .menuList{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(28 187 154);
+            color: white;
+            padding: 12px ;
+            border: 2px solid rgb(26 168 140);
+            border-radius: 8px;
+            letter-spacing: 1px;
+    
+            img{
+                width: 12px;
+                padding-left: 2px;
+            }
+        }
+    }
+}
+
+.lineWithStar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20px;
+    margin: 20px 0;
+    gap: 12px;
+    
+    .lineStar{
+        width: 120px;
+        height: 4px;
+        background-color: rgb(45 61 80);
+        border-radius: 8px;
+    }
+
+    .starIcon{
+
+        img{
+            width: 34px;
+        }
+    }
+
+}
+
+#startPage{
+
+    height: 760px;
+    background-color: rgb(28 187 154);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+
+    .avataaars{
+        width: 240px;
+        margin: 0 0 48px;
+    }
+    
+    h1{
+        font-size: 75px;
+        padding: 0 12px;
+        text-align: center;
+    }
+    
+    .lineStar{
+        background-color: white;
+    }
+    
+    p{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 24px;
+        letter-spacing: 1px;
+    }
+}
+
+#portfolio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: rgb(45 61 80);
+    padding: 90px 36px;
+
+    h1{
+        font-size: 46px;
+    }
+
+    .cards{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        
+        .col-4{
+            padding: 24px 12px ;
+            position: relative;
+
+            .bcgPlus{
+                position: absolute;
+                top: 0;
+                left: 0;
+                border-radius: 12px;
+                width: 100%;
+                height: 100%;
+                padding: 24px 12px ;
+
+                p{ 
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 120px;
+                    color: white;
+                    border-radius: 12px;
+                    width: 100%;
+                    height: 100%;
+                    opacity: 0;
+                    font-family: 'Nunito', sans-serif;
+                }
+            }
+
+            .bcgPlus :hover{
+                background-color: rgb(28 187 154);
+                opacity: 90%;
+                transition-duration: 0.4s;
+                cursor: pointer;
+
+            }
+        }
+
+        img{
+            width: 100%;
+            border-radius: 12px;
+        }
+    }
+}
+
+#about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(28 187 154);
+    color: white;
+    padding: 90px 36px;
+
+    h1{
+        font-size: 46px;
+    }
+
+    .lineStar{
+        background-color: white;
+    }
+
+    .texts{
+        display: flex;
+        margin: 16px 160px;
+
+        .aboutText{
+            padding: 0 12px;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 28px;
+        }
+    }
+
+
+    .btnDownload{
+        padding-top: 20px;
+        
+        button{
+            background-color: rgb(28 187 154);
+            padding: 18px 26px;
+            font-size: 22px;
+            border: 2px solid white;
+            border-radius: 8px;
+            color: white;
+        }
+
+        img{
+            width: 20px;
+            margin-right: 8px;
+
+        }
+
+        button:hover {    
+            background-color: white;
+            color: black;
+            cursor: pointer;
+        }
+        
+        button:hover img{
+            filter: invert(1);
+        }
+    } 
+}
+
+#contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: rgb(45 61 80);
+    padding: 90px 120px;
+
+    h1{
+        font-size: 46px;
+    }
+    
+    .formGroups{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 120px;
+        width: 100%;
+
+        .formGroup{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            position: relative;
+
+            label{
+                font-size: 24px;
+                color: rgb(108 117 125);
+                padding: 32px 0;
+                position: absolute;
+                top: 4px;
+            }
+
+            input{
+                border: none;
+                border-bottom: 1px solid rgb(206 212 218);
+                height: 84px;
+                padding: 54px 0;
+                z-index: 500;
+                background-color: transparent;
+                outline: none;
+            }
+
+            input:focus {
+                border: none;
+                border-bottom: 1px solid rgb(28 187 154);
+            }
+
+            input:focus + label{
+                font-size: 16px;
+                top: 0;
+            } 
+
+            textarea{
+                border: none;
+                border-bottom: 1px solid rgb(206 212 218);
+                padding: 24px 0;
+                outline: none;
+            }
+
+            textarea:focus {
+                border: none;
+                border-bottom: 1px solid rgb(28 187 154);
+            }
+
+            textarea:focus + label{
+                font-size: 16px;
+                top: 0;
+            }
+        }
+
+        form{
+            width: 100%;
+        }
+
+
+        button{
+            background-color: rgb(126 211 190);
+            color: white;
+            padding: 20px 16px;
+            font-size: 20px;
+            border: none;
+            border-radius: 12px;
+            margin: 20px 0;
+            width: 120px;
+        }
+
+        button:hover {
+            background-color: rgb(11, 135, 111);
+        }
+    }
+}
+
+.bootstrapfooter{
+    background-color: rgb(45 61 80);
+    padding: 80px 32px;
+    display: flex;
+    color: white;
+
+    .col-lg-4{
+        padding: 0 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2{
+            padding-bottom: 22px;
+        }
+
+        a{
+            color: rgb(28 187 154);
+        }
+
+        p{
+            font-size: 22px;
+            text-align: center;
+            margin: 0 0 22px;
+        }
+
+        .row{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            margin: 0 0 22px;
+
+            box{
+                width: 48px;
+                height: 48px;
+                padding: 12px;
+                border: 2px solid white;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+            }
+
+            box:hover{
+                background-color: white;
+                cursor: pointer;
+                
+                img{
+                    filter: invert(1); 
+                }
+            }
+        }
+    }
+
+    img{
+        height: 22px;
+    }
+
+}
+
+.footerbottom{
+    padding: 22px 0;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(26 37 47);
+    color: white;
+    font-size: 12px;
+}
+
+
+
+
+@media  screen and (min-width:992px) {
+    .col-4{
+        width: calc(100%/3); 
+    }
+
+    .col-6{
+        width: calc(100%/2);
+    }
+
+    .col-lg-4{
+        width: calc(100%/3);
+    }
+
+    .menuList{
+        display: none !important; 
+    }
+}
+
+
+
+@media  screen and (min-width:768px) and (max-width:991px) {
+    .col-md-6{
+        width: calc(100%/2);    
+    }
+
+    .navBarList{
+        display: none !important; 
+    }
+
+    #about{
+        .texts{
+            flex-direction: column;
+            margin: 16px 60px;
+
+            p{
+                margin: 20px 0;
+            }
+        }
+    }
+
+    #contact{
+        padding: 90px 60px ;
+
+        .formGroups{
+            padding: 0 60px ;
+        }
+    }
+
+    .bootstrapfooter{
+        flex-direction: column;
+    }
+}
+
+
+
+@media  screen and (max-width:767px){
+    .col-sm-12{
+        width: calc(100%/1);
+        margin: 0 0 24px;   
+    }
+
+    .navBarList{
+        display: none !important; 
+    }
+
+    header{
+        padding: 16px 0;
+
+        .navBar{
+            padding: 0 12px;
+
+            h1{
+                font-size: 20px;
+            }
+        }
+    }
+
+
+    #startPage{
+        height: 700px;
+
+        h1{
+            font-size: 42px;
+        }
+
+    }
+
+    #portfolio{
+
+        h1{
+            font-size: 36px;
+        }
+
+        .cards{
+            margin: 0 24px;
+        }
+    }
+
+    #about{
+        .texts{
+            flex-direction: column;
+            margin: 16px 24px;
+
+            p{
+                margin: 20px 0;
+            }
+        }
+    }
+
+    #contact{
+        padding: 90px 0;
+
+        .formGroups{
+            padding: 0 60px !important;
+        }
+    }
+
+    .bootstrapfooter{
+        flex-direction: column;
+    }
+}
